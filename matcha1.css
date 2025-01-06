@@ -31,25 +31,20 @@
     color: white;
 }
 
-
 .zoneLogo {
     background-color: red;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 200px,200px;
     } 
 
 
-    .matchaLogo{
-    background-color: #04AA6D;
-    block-size: 425px;
-    left: 200px;
-    margin: 0%;
-}
-
-
 .footer {
-    background-color: #EEECE5;
-    padding: 20px;
-}
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #EEECE5;
+      color: rgb(0, 0, 0);
+      text-align: center;
+  }
