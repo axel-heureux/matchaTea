@@ -31,25 +31,13 @@
     color: white;
 }
 
-.zoneTxt {
-    background-color: red;
-    display: flex;  
-    justify-content: center;
-    padding: 50px;
-    align-items: center;
-    height: 100%;
-    } 
-
-    .txtLogo {
-        text-size-adjust: 80px;
-}
 
 .zoneLogo {
     background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    padding: 200px;200px
     } 
 
 
