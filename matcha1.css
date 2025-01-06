@@ -31,9 +31,25 @@
     color: white;
 }
 
+.zoneTxt {
+    background-color: red;
+    display: flex;  
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    height: 100%;
+    } 
+
+    .txtLogo {
+        text-size-adjust: 80px;
+}
+
 .zoneLogo {
     background-color: red;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
     } 
 
 
@@ -41,7 +57,7 @@
     background-color: #04AA6D;
     block-size: 425px;
     left: 200px;
-    margin-right: 20%;
+    margin: 0%;
 }
 
 
