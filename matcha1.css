@@ -1,6 +1,51 @@
-body{
-    background-color: darkolivegreen;
+/*Background color*/
+.body {
+    background-color: #DAD7CD;
+}
+
+/*Couleur du fond du topnav*/
+.topnav {
+    background-color: #A3B18A;
+    overflow: hidden;
+  }
+  
+  /*topnav*/
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /*Couleur sous texte*/
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /*Couleur du liens*/
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.zoneLogo {
+    background-color: red;
+    justify-content: center;
+    } 
+
+
+    .matchaLogo{
+    background-color: #04AA6D;
+    block-size: 425px;
+    left: 200px;
+    margin-right: 20%;
 }
 
 
-.histoirematchatea
+.footer {
+    background-color: #EEECE5;
+    padding: 20px;
+}
