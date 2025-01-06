@@ -29,9 +29,23 @@
   .topnav a.active {
     background-color: #04AA6D;
     color: white;
-  }
+}
+
+.zoneLogo {
+    background-color: red;
+    justify-content: center;
+    } 
+
+
+    .matchaLogo{
+    background-color: #04AA6D;
+    block-size: 425px;
+    left: 200px;
+    margin-right: 20%;
+}
 
 
 .footer {
     background-color: #EEECE5;
+    padding: 20px;
 }
