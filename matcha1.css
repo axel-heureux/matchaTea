@@ -1,3 +1,10 @@
+
+.ibm-plex-sans-semibold {
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
 /*Background color*/
 .body {
     padding: 0;
@@ -13,6 +20,10 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     display: flex;
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: large;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -35,12 +46,9 @@
     color: black;
   }
   
-  /* Main content */
-  .main {
-    margin-top: 12%; /* Add a top margin to avoid content overlay */
-  }
 
 .zoneLogo {
+    margin-top: 12%; 
     display: flex;
     justify-content: center;
     padding: 200px,200px;
@@ -55,9 +63,45 @@
       background-color: #EEECE5;
       color: rgb(0, 0, 0);
       text-align: center;
+      font-family: "IBM Plex Sans", serif;
+      font-weight: 600;
+      font-size: large;
+      font-style: normal;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 10px;
       gap: 50px;
+}
+
+.produitPhare{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 325px;
+}
+
+  .pPh1{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
   }
+
+  .pPh2{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+  }
+
+  .pPh3{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.zoneOffres{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 400px;
+}
