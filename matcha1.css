@@ -1,38 +1,46 @@
 /*Background color*/
 .body {
+    padding: 0;
+    margin: 0;
     background-color: #DAD7CD;
 }
 
-/*Couleur du fond du topnav*/
-.topnav {
-    background-color: #A3B18A;
+/* The navigation bar */
+.navbar {
     overflow: hidden;
+    background-color: #A3B18A;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 300px;
   }
   
-  /*topnav*/
-  .topnav a {
+  /* Links inside the navbar */
+  .navbar a {
     float: left;
-    color: #f2f2f2;
+    display: block;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
   }
   
-  /*Couleur sous texte*/
-  .topnav a:hover {
-    background-color: #ddd;
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
     color: black;
   }
   
-  /*Couleur du liens*/
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
+  /* Main content */
+  .main {
+    margin-top: 12%; /* Add a top margin to avoid content overlay */
+  }
 
 .zoneLogo {
-    background-color: red;
     display: flex;
     justify-content: center;
     padding: 200px,200px;
@@ -47,4 +55,9 @@
       background-color: #EEECE5;
       color: rgb(0, 0, 0);
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      gap: 50px;
   }
