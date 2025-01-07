@@ -1,0 +1,135 @@
+<<<<<<< HEAD
+=======
+/*Background color*/
+.body {
+    background-color: #DAD7CD;
+    padding: 0;
+    margin: 0;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #A3B18A;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 600;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 300px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  font-size: x-large;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  border-radius: 10px;
+  color: black;
+}
+
+
+.zoneLogo {
+    background-color: red;
+    justify-content: center;
+    } 
+
+
+    .matchaLogo {
+      background-color: #04AA6D;
+      block-size: 425px;
+      left: 200px;
+      margin-right: 20%;
+    }
+
+.titre {
+background-color: orange;
+margin-top: 22%;
+display: flex;
+justify-content: center;
+
+}
+
+.apropos {
+  background-color: red;
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.engagement {
+  background-color: aqua;
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.choisir {
+  background-color: greenyellow;
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services {
+  background-color: yellow;
+  margin-top: 30%;
+  margin-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #EEECE5;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 600;
+  font-size: large;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 50px;
+}
+
+/* Links inside the navbar */
+.footer a {
+float: left;
+display: block;
+color: #000000;
+font-size: small;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.footer a :hover {
+background: #ddd;
+color: black;
+}
+>>>>>>> 0114b2541526655ee061dd594de21bd537bdbc8d
