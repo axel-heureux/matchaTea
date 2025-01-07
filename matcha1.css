@@ -1,136 +1,54 @@
-
-.ibm-plex-sans-semibold {
-    font-family: "IBM Plex Sans", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-/*Background color*/
 .body {
-    padding: 0;
-    margin: 0;
-    background-color: #DAD7CD;
+  padding: 0;
+  margin: 0;
 }
 
+.header {
+background-color: red;
+width: 100%;
+height: 5%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
 
-/* The navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: #A3B18A;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    display: flex;
-    font-family: "IBM Plex Sans", serif;
-    font-weight: 600;
-    font-style: normal;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 300px;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    display: block;
-    color: #000000;
-    font-size: x-large;
+.LeftNavbar {
+  overflow: hidden;
+  background-color: #A3B18A;
+  position: fixed; 
+  top: 20; 
+  width: 20; 
+  display: flex;
+  flex-direction: column;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+
+/* Links inside the navbar */
+.LeftNavbar a {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  float: left;
+  color: #000000;
+  text-size-adjust: 10px;
+  text-decoration: none;
+
+}
+
+.BottomNavbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+    padding: 5%;
+    background-color: green;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
   }
   
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: #ddd;
-    border-radius: 10px;
-    color: black;
-  }
-  
-
-.zoneLogo {
-    margin-top: 12%; 
-    display: flex;
-    justify-content: center;
-    padding: 200px,200px;
-    } 
-
-
-.footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #EEECE5;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      font-family: "IBM Plex Sans", serif;
-      font-weight: 600;
-      font-size: large;
-      font-style: normal;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      gap: 50px;
-}
-
-  /* Links inside the navbar */
-  .footer a {
-    float: left;
-    display: block;
-    color: #000000;
-    font-size: small;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change background on mouse-over */
-  .footer a :hover {
-    background: #ddd;
-    color: black;
-  }
-
-
-.produitPhare{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin: 325px;
-}
-
-  .pPh1{
-    width: 350px;
-    height: 350px;
-    border-radius: 10px;
-    outline-style:groove;
-    outline-offset: 2px;
-    outline-color: #ffffff8e;
-  }
-
-  .pPh2{
-    width: 350px;
-    height: 350px;
-    border-radius: 10px;
-    outline-style:groove;
-    outline-offset: 2px;
-    outline-color: #ffffff8e;
-  }
-
-  .pPh3{
-    width: 350px;
-    height: 350px;
-    border-radius: 10px;
-    outline-style:groove;
-    outline-offset: 2px;
-    outline-color: #ffffff8e;
-}
-
-.zoneOffres{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin: 400px;
-}
