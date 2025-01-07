@@ -5,33 +5,41 @@
     margin: 0;
 }
 
-/*Couleur du fond du topnav*/
-.topnav {
-    background-color: #A3B18A;
-    overflow: hidden;
-  }
-  
-  /*topnav*/
-.topnav a {
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #A3B18A;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 600;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 300px;
+}
+
+/* Links inside the navbar */
+.navbar a {
   float: left;
-  color: #f2f2f2;
+  display: block;
+  color: #000000;
+  font-size: x-large;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
-  
-  /*Couleur sous texte*/
-.topnav a:hover {
-  background-color: #ddd;
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  border-radius: 10px;
   color: black;
 }
-  
-  /*Couleur du liens*/
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+
 
 .zoneLogo {
     background-color: red;
@@ -84,6 +92,37 @@ display: flex;
 }
 
 .footer {
-    background-color: #EEECE5;
-    padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #EEECE5;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 600;
+  font-size: large;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 50px;
+}
+
+/* Links inside the navbar */
+.footer a {
+float: left;
+display: block;
+color: #000000;
+font-size: small;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.footer a :hover {
+background: #ddd;
+color: black;
 }
