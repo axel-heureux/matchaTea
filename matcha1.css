@@ -12,6 +12,7 @@
     background-color: #DAD7CD;
 }
 
+
 /* The navigation bar */
 .navbar {
     overflow: hidden;
@@ -23,7 +24,6 @@
     font-family: "IBM Plex Sans", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: large;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -35,6 +35,7 @@
     float: left;
     display: block;
     color: #000000;
+    font-size: x-large;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -43,6 +44,7 @@
   /* Change background on mouse-over */
   .navbar a:hover {
     background: #ddd;
+    border-radius: 10px;
     color: black;
   }
   
@@ -74,6 +76,25 @@
       gap: 50px;
 }
 
+  /* Links inside the navbar */
+  .footer a {
+    float: left;
+    display: block;
+    color: #000000;
+    font-size: small;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .footer a :hover {
+    background: #ddd;
+    background-
+    color: black;
+  }
+
+
 .produitPhare{
     display: flex;
     justify-content: center;
@@ -85,18 +106,27 @@
     width: 350px;
     height: 350px;
     border-radius: 10px;
+    outline-style:groove;
+    outline-offset: 2px;
+    outline-color: #ffffff8e;
   }
 
   .pPh2{
     width: 350px;
     height: 350px;
     border-radius: 10px;
+    outline-style:groove;
+    outline-offset: 2px;
+    outline-color: #ffffff8e;
   }
 
   .pPh3{
     width: 350px;
     height: 350px;
     border-radius: 10px;
+    outline-style:groove;
+    outline-offset: 2px;
+    outline-color: #ffffff8e;
 }
 
 .zoneOffres{
