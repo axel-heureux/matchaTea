@@ -15,6 +15,11 @@ align-items: center;
 justify-content: space-around;
 }
 
+.logoTxt{
+  color: rgb(43, 160, 43);
+  text-size-adjust: 500px;
+}
+
 .LeftNavbar {
   overflow: hidden;
   background-color: #8B5E34;
@@ -67,6 +72,9 @@ justify-content: space-around;
 }
 
 .bottomImage {
-  width: 50%;
+  outline-style: solid;
+  outline-color: #000000;
+  background: #E7BC91;
+  width: 40%;
   height: 50%;
 }
