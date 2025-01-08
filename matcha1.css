@@ -31,6 +31,9 @@ justify-content: space-around;
   align-items: center;
   width: 15%;
   height: 100%;
+  outline-style:solid;
+  outline-width: 2px;
+  outline-color: #000000;
 }
 
 /* Links inside the navbar */
@@ -41,14 +44,13 @@ justify-content: space-around;
   color: #000000;
   text-size-adjust: 10px;
   text-decoration: none;
-
 }
 
 .bottomNavbar {
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 85%;
+    width: 1630px;
     height: 20%;
     background-color: #BC8A5F;
     color: white;
