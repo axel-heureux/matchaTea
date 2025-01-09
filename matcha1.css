@@ -26,7 +26,6 @@
 
 /* Décaler le contenu principal sous le header */
 .main-content {
-  background-color: red;
   margin-left: 5%;
   margin-top: 40px; /* Même valeur que la hauteur du header */
   margin-bottom: 10%; /* Ajout pour éviter que le footer masque le contenu */
@@ -88,6 +87,18 @@
   height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
   justify-content: center; 
   background-color: #D4A276; 
+  box-sizing: border-box; 
+}
+
+.produitVente {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 10px 50px;
+  padding: 5%; 
+  margin-left: 5%; 
+  height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
+  justify-content: center; 
+  background-color: red; 
   box-sizing: border-box; 
 }
 
