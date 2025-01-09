@@ -9,16 +9,44 @@
 }
 
 .header {
-background-color: #8B5E34;
-position: fixed;
-right: 0;
-width: 94.9%;
-height: 5%;
-display: flex;
-align-items: center;
-justify-content: space-around;
+  background-color: #8B5E34;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%; /* Pour s'assurer qu'il couvre toute la largeur */
+  height: 40px; /* Ajustez la hauteur si nécessaire */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrer le contenu dans le header */
+  z-index: 1000; /* Pour qu'il reste au-dessus des autres éléments */
+  outline-style: solid;
+  outline-width: 2px;
 }
 
+
+/* Décaler le contenu principal sous le header */
+.main-content {
+  background-color: red;
+  margin-left: 5%;
+  margin-top: 40px; /* Même valeur que la hauteur du header */
+  margin-bottom: 10%; /* Ajout pour éviter que le footer masque le contenu */
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: space-evenly;
+  height: auto; /* Ajustez dynamiquement selon le contenu */
+  text-align: center; /* Pour centrer le texte */
+  background-color: #A57A55;
+  width: 95%;
+  
+}
+
+.texte {
+  width: 50%;
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+}
 
 
 .LeftNavbar {
@@ -53,13 +81,14 @@ justify-content: space-around;
 .mosaicVente {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  gap:  10px 50px;
+  gap: 10px 50px;
   padding: 5%; 
   margin-left: 5%; 
-  height: 250vh; 
+  margin-bottom: 20%; /* Ajout pour éviter le chevauchement avec le footer */
+  height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
   justify-content: center; 
   background-color: #D4A276; 
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 .produitMosaic {
