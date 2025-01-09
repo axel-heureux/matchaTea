@@ -1,4 +1,6 @@
 .body {
+  background-image: url('images/photo/matcha.jpg');
+  background-repeat: no-repeat;
   background-color: #D4A276 ;
   padding: 0;
   margin: 0;
@@ -34,7 +36,7 @@
   align-items:center; /* Centrer verticalement */
   justify-content: center;
   text-align: center ; /* Pour centrer le texte */
-  background-color: #a57a558e;
+  background-color: #a57a55cc;
   
 }
 
@@ -46,7 +48,7 @@
   justify-content: space-evenly;
   height: auto; /* Ajustez dynamiquement selon le contenu */
   text-align: center; /* Pour centrer le texte */
-  background-color: #D4A276 ;
+  background-color: #00000060 ;
   width: 95%;
   
 }
@@ -106,7 +108,7 @@
   gap: 10px 50px;
   padding: 5%; 
   margin-left: 5%; 
-  margin-bottom: 20%; /* Ajout pour éviter le chevauchement avec le footer */
+  margin-bottom: 8%; /* Ajout pour éviter le chevauchement avec le footer */
   height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
   justify-content: center; 
   background-color: #D4A276; 
@@ -120,13 +122,12 @@
   padding: 5%; 
   margin-left: 5%; 
   height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
-  justify-content: center; 
-  background-color: D4A276; 
+  justify-content: center;  
   box-sizing: border-box; 
 }
 
 .produitMosaic {
-  background-color: #0000002f; /* Couleur de fond pour chaque produit */
+  background-color: #0000009a; /* Couleur de fond pour chaque produit */
   display: flex;
   justify-content: center; /* Centre le contenu à l'intérieur de la carte */
   align-items: center;
