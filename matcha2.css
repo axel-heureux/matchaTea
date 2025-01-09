@@ -43,6 +43,10 @@
   font-size: 150%;
 }
 
+.titre {
+  background-color:#A57A55;
+}
+
 .equipe {
   width: 200px;
   height: 200px;
@@ -213,3 +217,101 @@ button:hover {
   background-color: #0056b3;
 }
 
+
+.quantite {
+  text-align: right;
+}
+
+.commande-box {
+  border: 1px solid #ccc; /* Bordure de la boîte */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement interne */
+  margin: 20px 0; /* Espacement externe */
+  text-align: center; /* Centrer le contenu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+  width: 400px;
+  margin-left: 36%;
+}
+
+.commande-box img {
+  width: 100px; /* Taille des images */
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Ajoute une légère ombre pour la profondeur */
+  opacity: 0.8; /* Rend l'image légèrement transparente */
+  transition: opacity 0.3s ease, filter 0.3s ease; /* Effet de transition lors du survol */
+}
+
+img:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(78, 237, 105, 0.8)); /* Ajoute une lueur jaune au survol */
+}
+
+.commande-box h1 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  font-weight:900 ;
+  font-size: 35px;
+}
+
+.commande-box .quantite {
+  background-color: green; /* Bleu pour la quantité */
+  color: white; /* Couleur du texte */
+  padding: 5px 10px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  display: inline-block; /* Adapter la taille au contenu */
+  margin-top: 10px; /* Espacement au-dessus */
+}
+
+.commande3 {
+margin-bottom: 5%;
+
+}
+
+.cta {
+  border: none;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 20%;
+  margin-left: 40.5%;
+  padding-bottom: 7px;
+  padding-left: 2px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 15%;
+  margin-top: 0;
+}
+
+
+
+.cta:active {
+  transform: scale(0.9);
+}
+
+.cta {
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding-bottom: 10px;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
