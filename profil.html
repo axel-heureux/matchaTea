@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="matcha2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dynalight&family=Great+Vibes&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Permanent+Marker&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matchaTea</title>
+</head>
+<body class="body">
+    <header>
+        <section>
+            <div class="header">
+                <h1 class="logoTxt">MatchaTea</h1>
+            </div>
+        </section>
+        <nav class="LeftNavbar">
+            <a class="active" href="#">Accueil</a>
+            <a href="#">Vente</a>
+            <a href="#">A propos</a>
+            <a href="#">Histoire</a>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Modifier le Profil</h1>
+            <form action="/update-profile" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+    
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+    
+                <label for="adresse">Adresse postale :</label>
+                <textarea id="adresse" name="adresse" placeholder="Entrez votre adresse postale" required></textarea>
+    
+                <label for="telephone">Numéro de téléphone :</label>
+                <input type="text" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone" required>
+    
+                <label for="coordonnees_bancaires">Coordonnées bancaires :</label>
+                <input type="text" id="coordonnees_bancaires" name="coordonnees_bancaires" placeholder="Entrez vos coordonnées bancaires" required>
+    
+                <label for="motdepasse">Mot de passe :</label>
+                <input type="password" id="motdepasse" name="motdepasse" placeholder="Entrez votre mot de passe" required>
+    
+                <button type="submit">Sauvegarder</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="bottomNavbar">
+            <a class="bottomLink" href="#">Matcha-Tea®</a>
+            <img class="bottomImage" src="images/photo/offres.png">
+            <a class="bottomLink" href="#">Matcha-Tea®</a>
+    </footer>
+</body>
+</html>
