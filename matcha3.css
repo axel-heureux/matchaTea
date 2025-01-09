@@ -1,4 +1,6 @@
 .body {
+  background-image: url('images/photo/matcha.jpg');
+  background-repeat: no-repeat;
   background-color: #D4A276 ;
   padding: 0;
   margin: 0;
@@ -86,11 +88,14 @@ justify-content: space-around;
   border-radius: 10px;
   position: absolute;  /* Ajouté pour positionner de manière absolue */
   top: 42%;            /* Positionne à 50% de la hauteur de la fenêtre */
-  left: 50%;           /* Positionne à 50% de la largeur de la fenêtre */
+  left: 54%;           /* Positionne à 50% de la largeur de la fenêtre */
   transform: translate(-50%, -50%);  /* Décale le formulaire de moitié de sa propre taille pour un centrage parfait */
   padding-right: 45px;
 }
 
+.Afin2 {
+  color: white;
+}
 
 .message {
   color: rgba(0, 0, 0, 0.327);
