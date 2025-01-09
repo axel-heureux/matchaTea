@@ -1,36 +1,160 @@
-.header {
-background-color: red;
-padding-top: 5%;
-padding-bottom: 5%;
-display: flex;
-align-items: center;
-justify-content: space-around;
+.body {
+  background-color: #D4A276 ;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #A3B18A;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 20; /* Position the navbar at the top of the page */
-  width: 20%; /* Full width */
+.logoTxt {
+  font-family: "Playwrite AU SA", serif;
+}
+
+.header {
+  background-color: #8B5E34;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%; /* Pour s'assurer qu'il couvre toute la largeur */
+  height: 40px; /* Ajustez la hauteur si nécessaire */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrer le contenu dans le header */
+  z-index: 1000; /* Pour qu'il reste au-dessus des autres éléments */
+}
+
+/* Décaler le contenu principal sous le header */
+.main-content {
+  margin-left: 5%;
+  margin-top: 40px; /* Même valeur que la hauteur du header */
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: space-evenly;
+  height: 300px; /* Hauteur de l'écran moins la hauteur du header */
+  text-align: center; /* Pour centrer le texte */
+  background-color: #A57A55;
+  width: 95%;
+  
+}
+
+.texte {
+  width: 50%;
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+}
+
+.equipe {
+  width: 200px;
+  height: 200px;
+  background-color: #0000002f; /* Couleur de fond pour chaque produit */
+  padding: 10px;
+  border: 2px solid #8B5E34; /* Bordure pour chaque produit */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  background-color: #A57A55;
   display: flex;
   flex-direction: column;
-  font-family: "IBM Plex Sans", serif;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.LeftNavbar {
+  overflow: hidden;
+  background-color: #8B5E34;
+  position: fixed; 
+  top: 20; 
+  display: flex;
+  flex-direction: column;
   font-weight: 600;
   font-style: normal;
   font-size: large;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px;
-  gap: 300px;
+  width: 5%;
+  height: 100%;
+  outline-style:solid;
+  outline-width: 2px;
+  outline-color: #000000;
 }
 
 /* Links inside the navbar */
-.navbar a {
+.LeftNavbar a {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
   float: left;
-  display: block;
   color: #000000;
-  text-align: center;
-  padding: 14px 16px;
+  text-size-adjust: 10px;
   text-decoration: none;
+}
+
+.mosaicVente {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap:  10px 50px;
+  padding: 5%; 
+  margin-left: 5%; 
+  height: 80vh; 
+  justify-content: center; 
+  background-color: #D4A276; 
+  box-sizing: border-box;
+  background-color: #A57A55;
+}
+
+.produitMosaic {
+  background-color: #0000002f; /* Couleur de fond pour chaque produit */
+  display: flex;
+  justify-content: center; /* Centre le contenu à l'intérieur de la carte */
+  align-items: flex-end;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid #8B5E34; /* Bordure pour chaque produit */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet */
+}
+
+.bottomNavbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 94.9%;
+    height: 20%;
+    background-color: #BC8A5F;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+
+.bottomLink{
+  text-decoration: none;
+  color: #000000;
+}
+
+.bottomImage {
+  outline-style: solid;
+  outline-color: #000000;
+  background: #E7BC91;
+  width: 40%;
+  height: 50%;
 }
