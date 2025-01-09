@@ -5,6 +5,7 @@
 }
 
 .logoTxt {
+  color: rgb(93, 189, 93);
   font-family: "Playwrite AU SA", serif;
 }
 
@@ -12,8 +13,8 @@
   background-color: #8B5E34;
   position: fixed;
   top: 0;
-  right: 0;
-  width: 100%; /* Pour s'assurer qu'il couvre toute la largeur */
+  right: -2px;
+  width: 95%; /* Pour s'assurer qu'il couvre toute la largeur */
   height: 40px; /* Ajustez la hauteur si nécessaire */
   display: flex;
   align-items: center;
@@ -26,25 +27,47 @@
 
 /* Décaler le contenu principal sous le header */
 .main-content {
+  width: 100%;
+  margin-top: 50px; /* Même valeur que la hauteur du header */
+  gap: 300px;
+  display: flex;
+  align-items:center; /* Centrer verticalement */
+  justify-content: center;
+  text-align: center ; /* Pour centrer le texte */
+  background-color: #a57a558e;
+  
+}
+
+.main-title {
   margin-left: 5%;
-  margin-top: 40px; /* Même valeur que la hauteur du header */
-  margin-bottom: 10%; /* Ajout pour éviter que le footer masque le contenu */
+  margin-top: 100px; /* Même valeur que la hauteur du header */
   display: flex;
   align-items: center; /* Centrer verticalement */
   justify-content: space-evenly;
   height: auto; /* Ajustez dynamiquement selon le contenu */
   text-align: center; /* Pour centrer le texte */
-  background-color: #A57A55;
+  background-color: #D4A276 ;
   width: 95%;
   
 }
 
+.titre {
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+  outline-style: solid;
+  outline-offset: 20px;
+  outline-color: white;
+  font-family: "Roboto", serif;
+}
+
 .texte {
   width: 50%;
-  font-family: "Great Vibes", serif;
+  font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 150%;
+  font-size: 100%;
+  font-weight: 100;
 }
 
 
@@ -52,7 +75,7 @@
   overflow: hidden;
   background-color: #8B5E34;
   position: fixed; 
-  top: 20; 
+  top: 0;
   display: flex;
   flex-direction: column;
   font-weight: 600;
@@ -98,7 +121,7 @@
   margin-left: 5%; 
   height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
   justify-content: center; 
-  background-color: red; 
+  background-color: D4A276; 
   box-sizing: border-box; 
 }
 
