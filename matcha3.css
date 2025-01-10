@@ -83,7 +83,7 @@ justify-content: space-around;
   flex-direction: column;
   gap: 2px;
   max-width: 350px;
-  background-color: rgba(0, 0, 0, 0.327);
+  background-color: #5d402592 ;
   padding: 20px;
   border-radius: 10px;
   position: absolute;  /* Ajouté pour positionner de manière absolue */
@@ -259,8 +259,8 @@ justify-content: space-around;
 }
 
 .fancy:hover {
-  color: rgba(0, 0, 0, 0.327);
-  background: rgba(0, 0, 0, 0.327);
+  color: #5d402592;
+  background: #5d402592;
 }
 
 .fancy:hover::before {
