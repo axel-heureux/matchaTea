@@ -4,6 +4,7 @@
   background-color: #D4A276 ;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .logoTxt {
