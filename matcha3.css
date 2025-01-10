@@ -22,6 +22,11 @@ align-items: center;
 justify-content: space-around;
 }
 
+.logoprofil {
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
+}
 
 
 .LeftNavbar {

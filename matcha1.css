@@ -27,6 +27,12 @@
   outline-width: 2px;
 }
 
+.logoprofil {
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
+}
+
 
 /* Décaler le contenu principal sous le header */
 .main-content {

@@ -24,9 +24,20 @@
   outline-width: 2px;
 }
 
+.logoprofil {
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Décaler le contenu principal sous le header */
 .main-content {
-  margin-left: 5%;
+  margin-left: 2%;
   margin-top: 40px; /* Même valeur que la hauteur du header */
   display: flex;
   align-items: center; /* Centrer verticalement */
@@ -39,7 +50,6 @@
 }
 
 .texte {
-  width: 50%;
   font-family: "Playwrite AU SA", serif;
   font-weight: 400;
   font-style: normal;
@@ -48,6 +58,9 @@
 
 .titre {
   background-color:#A57A55;
+  margin-bottom: -150px;
+  width: 300px;
+  text-align: center;
 }
 
 .equipe {
@@ -91,12 +104,12 @@
 }
 
 .mosaicVente {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  gap:  10px 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 3%; 
   margin-left: 5%; 
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   box-sizing: border-box;
 }
 
@@ -151,9 +164,8 @@
   width: 100%;
   max-width: 30%;
   max-height: 650px;
-  margin-left: 36%;
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 h1 {
@@ -418,4 +430,22 @@ margin-bottom: 5%;
  .btn-link:hover {
   color: #ffeba7;
  }
+
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #8c6239;
+  color: white;
+}
  
+
