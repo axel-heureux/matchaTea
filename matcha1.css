@@ -1,3 +1,118 @@
+
+  * {
+    box-sizing: border-box; /* Inclut padding et bordures dans les dimensions */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+    scroll-behavior: smooth;
+  }
+  
+  .TopNavbar {
+    background-color: #8B5E34;
+    position: fixed;
+    top: 0;
+    right: 10;
+    left: 0; /* Assure que le header s'étend bien de gauche à droite */
+    width: 100%; /* Couvre toute la largeur */
+    height: 40px; /* Ajustez si nécessaire */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    outline: 2px solid green;
+  }
+  
+  .main-title {
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    text-align: center;
+    background-color: #00000060;
+    width: 90%
+  }
+  
+  .LeftNavbar {
+    overflow: hidden;
+    background-color: #8B5E34;
+    position: fixed;
+    top: 0;
+    left: 0; /* Assure que la navbar reste alignée à gauche */
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-style: normal;
+    font-size: large;
+    justify-content: space-around;
+    align-items: center;
+    width: 5%;
+    height: 100%;
+    outline: 2px solid #000000;
+  }
+  
+  .produitVente {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px 50px;
+    padding: 5%;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 95%; /* Empêche tout débordement */
+    background-color: #D4A276;
+  }
+  
+  .produitMosaic {
+    margin: 0 auto; /* Centre chaque produit horizontalement */
+    background-color: #0000009a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid #8B5E34;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bottomNavbar {
+    position: fixed;
+    right: 0;
+    left: 0; /* S'assure qu'il s'étend sur toute la largeur */
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #BC8A5F;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+@media only screen and (max-width: 1024px) {
+  .header {
+    background-color: #8B5E34;
+    position: fixed;
+    top: 0;
+    right: -2px;
+    width: 95%; /* Pour s'assurer qu'il couvre toute la largeur */
+    height: 40px; /* Ajustez la hauteur si nécessaire */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer le contenu dans le header */
+    z-index: 1000; /* Pour qu'il reste au-dessus des autres éléments */
+    outline-style: solid;
+    outline-color: green;
+    outline-width: 2px;
+  }
+}
+
 .body {
   background-image: url('images/photo/matcha.jpg');
   background-repeat: no-repeat;
@@ -12,20 +127,188 @@
   font-family: "Playwrite AU SA", serif;
 }
 
-.header {
-  background-color: #8B5E34;
-  position: fixed;
-  top: 0;
-  right: -2px;
-  width: 95%; /* Pour s'assurer qu'il couvre toute la largeur */
-  height: 40px; /* Ajustez la hauteur si nécessaire */
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centrer le contenu dans le header */
-  z-index: 1000; /* Pour qu'il reste au-dessus des autres éléments */
-  outline-style: solid;
-  outline-width: 2px;
+
+.logoprofil {
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
 }
+
+
+/* Décaler le contenu principal sous le header */
+.main-content {
+  width: 100%;
+  margin-top: 50px; /* Même valeur que la hauteur du header */
+  gap: 300px;
+  display: flex;
+  align-items:center; /* Centrer verticalement */
+  justify-content: center;
+  text-align: center ; /* Pour centrer le texte */
+  background-color: #a57a55cc;
+  
+}
+
+.main-title {
+  margin-left: 5%;
+  margin-top: 100px; /* Même valeur que la hauteur du header */
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: space-evenly;
+  height: auto; /* Ajustez dynamiquement selon le contenu */
+  text-align: center; /* Pour centrer le texte */
+  background-color: #00000060 ;
+  width: 95%;
+  
+}
+
+.titre {
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+  outline-style: solid;
+  outline-offset: 20px;
+  outline-color: white;
+  font-family: "Roboto", serif;
+}
+
+.texte {
+  width: 50%;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: 100;
+}
+
+
+.LeftNavbar {
+  overflow: hidden;
+  background-color: #8B5E34;
+  position: fixed; 
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+  justify-content: space-around;
+  align-items: center;
+  width: 5%;
+  height: 100%;
+  outline-style:solid;
+  outline-width: 2px;
+  outline-color: #000000;
+}
+
+/* Links inside the navbar */
+.LeftNavbar a {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  float: left;
+  color: #000000;
+  text-size-adjust: 10px;
+  text-decoration: none;
+}
+
+.mosaicVente {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 10px 50px;
+  padding: 5%; 
+  margin-left: 5%; 
+  margin-bottom: 8%; /* Ajout pour éviter le chevauchement avec le footer */
+  height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
+  justify-content: center; 
+  background-color: #D4A276; 
+  box-sizing: border-box; 
+}
+
+.produitVente {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 10px 50px;
+  margin: 15%;
+  padding: 5%; 
+  margin-left: 5%; 
+  height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
+  justify-content: center;  
+  box-sizing: border-box; 
+}
+
+.produitMosaic {
+  background-color: #0000009a; /* Couleur de fond pour chaque produit */
+  display: flex;
+  justify-content: center; /* Centre le contenu à l'intérieur de la carte */
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid #8B5E34; /* Bordure pour chaque produit */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet */
+}
+
+.bottomNavbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #BC8A5F;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+
+.bottomLink{
+  text-decoration: none;
+  color: #000000;
+}
+
+.bottomImage {
+  outline-style: solid;
+  outline-color: #000000;
+  background: #E7BC91;
+  width: 40%;
+  height: 50%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    background-color: #8B5E34;
+    position: fixed;
+    top: 0;
+    right: -2px;
+    width: 95%; /* Pour s'assurer qu'il couvre toute la largeur */
+    height: 40px; /* Ajustez la hauteur si nécessaire */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer le contenu dans le header */
+    z-index: 1000; /* Pour qu'il reste au-dessus des autres éléments */
+    outline-style: solid;
+    outline-color: green;
+    outline-width: 2px;
+  }
+
+
+.body {
+  background-image: url('images/photo/matcha.jpg');
+  background-repeat: no-repeat;
+  background-color: #D4A276 ;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.logoTxt {
+  color: rgb(93, 189, 93);
+  font-family: "Playwrite AU SA", serif;
+}
+
 
 .logoprofil {
   width: 30px;
@@ -151,7 +434,7 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 94.9%;
+    width: 100%;
     height: 20%;
     background-color: #BC8A5F;
     color: white;
@@ -173,4 +456,185 @@
   background: #E7BC91;
   width: 40%;
   height: 50%;
+}}
+
+@media only screen and (min-width: 1025px) {
+  .header {
+    background-color: #8B5E34;
+    position: fixed;
+    top: 0;
+    right: -2px;
+    width: 95%; /* Pour s'assurer qu'il couvre toute la largeur */
+    height: 40px; /* Ajustez la hauteur si nécessaire */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer le contenu dans le header */
+    z-index: 1000; /* Pour qu'il reste au-dessus des autres éléments */
+    outline-style: solid;
+    outline-color: green;
+    outline-width: 2px;
+  }
+
+
+.body {
+  background-image: url('images/photo/matcha.jpg');
+  background-repeat: no-repeat;
+  background-color: #D4A276 ;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
+
+.logoTxt {
+  color: rgb(93, 189, 93);
+  font-family: "Playwrite AU SA", serif;
+}
+
+
+.logoprofil {
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
+}
+
+
+/* Décaler le contenu principal sous le header */
+.main-content {
+  width: 100%;
+  margin-top: 50px; /* Même valeur que la hauteur du header */
+  gap: 300px;
+  display: flex;
+  align-items:center; /* Centrer verticalement */
+  justify-content: center;
+  text-align: center ; /* Pour centrer le texte */
+  background-color: #a57a55cc;
+  
+}
+
+.main-title {
+  margin-left: 5%;
+  margin-top: 100px; /* Même valeur que la hauteur du header */
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: space-evenly;
+  height: auto; /* Ajustez dynamiquement selon le contenu */
+  text-align: center; /* Pour centrer le texte */
+  background-color: #00000060 ;
+  width: 95%;
+  
+}
+
+.titre {
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+  outline-style: solid;
+  outline-offset: 20px;
+  outline-color: white;
+  font-family: "Roboto", serif;
+}
+
+.texte {
+  width: 50%;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: 100;
+}
+
+
+.LeftNavbar {
+  overflow: hidden;
+  background-color: #8B5E34;
+  position: fixed; 
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+  justify-content: space-around;
+  align-items: center;
+  width: 5%;
+  height: 100%;
+  outline-style:solid;
+  outline-width: 2px;
+  outline-color: #000000;
+}
+
+/* Links inside the navbar */
+.LeftNavbar a {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  float: left;
+  color: #000000;
+  text-size-adjust: 10px;
+  text-decoration: none;
+}
+
+.mosaicVente {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 10px 50px;
+  padding: 5%; 
+  margin-left: 5%; 
+  margin-bottom: 8%; /* Ajout pour éviter le chevauchement avec le footer */
+  height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
+  justify-content: center; 
+  background-color: #D4A276; 
+  box-sizing: border-box; 
+}
+
+.produitVente {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 10px 50px;
+  padding: 5%; 
+  margin-left: 5%; 
+  height: auto; /* Supprimez une hauteur fixe si possible pour un meilleur ajustement */
+  justify-content: center;  
+  box-sizing: border-box; 
+}
+
+.produitMosaic {
+  background-color: #0000009a; /* Couleur de fond pour chaque produit */
+  display: flex;
+  justify-content: center; /* Centre le contenu à l'intérieur de la carte */
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid #8B5E34; /* Bordure pour chaque produit */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet */
+}
+
+.bottomNavbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #BC8A5F;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+
+.bottomLink{
+  text-decoration: none;
+  color: #000000;
+}
+
+.bottomImage {
+  outline-style: solid;
+  outline-color: #000000;
+  background: #E7BC91;
+  width: 40%;
+  height: 50%;
+}}

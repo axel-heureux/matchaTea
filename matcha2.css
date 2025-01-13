@@ -222,7 +222,7 @@ button:hover {
   text-align: center; /* Centrer le contenu */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
   width: 400px;
-  margin-left: 36%;
+  margin-left: 41%;
 }
 
 .commande-box img {
@@ -267,7 +267,7 @@ margin-bottom: 5%;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 20%;
-  margin-left: 40.5%;
+  margin-left: 43%;
   padding-bottom: 7px;
   padding-left: 2px;
   letter-spacing: 4px;
